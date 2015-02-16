@@ -38,7 +38,7 @@ try:
         print 'Request received:'
         print recvSocket.recv(2048)
         print 'Answering back...'
-        recvSocket.send("HTTP/1.1 404 Not found\r\n\r\n" +
+        recvSocket.send("HTTP/1.1 200 OK\r\n\r\n" +
                         "<html><body><h1>Hello World!</h1>" +
                         "<a href='"  + str(num_al)  +"'>Dame otra url</a>"  +
                         "</body></html>" +
